@@ -23,6 +23,7 @@
     "@vue/cli-service": "^4.0.0",
     "@vue/test-utils": "1.0.0-beta.29",
     "babel-jest": "^24.9.0",
+    "jest-serializer-vue": "^2.0.2",
     "vue-jest": "^3.0.5",
     "vue-template-compiler": "^2.6.10"
   },
@@ -37,8 +38,14 @@
       "^.+\\.js$": "<rootDir>/node_modules/babel-jest"
     },
     "collectCoverage": true,
-    "collectCoverageFrom": ["**/*.{js,vue}", "!**/node_modules/**"],
-    "coverageReporters": ["html", "text-summary"],
+    "collectCoverageFrom": [
+      "**/*.{js,vue}",
+      "!**/node_modules/**"
+    ],
+    "coverageReporters": [
+      "html",
+      "text-summary"
+    ],
     "moduleNameMapper": {
       "^@/(.*)$": "<rootDir>/src/$1"
     }
